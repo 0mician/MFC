@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Martin Franck</title>    
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Martin Franck Consulting</a>
+          <p class="navbar-text hidden-xs">for Hospitality Businesses</p>
+        </div>
+      </div>
+    </nav>
+
+    <div class="jumbotron topSection">
+      <div class="container">
+        <div class="starter-template">
+          <h1>Executive Search and Human Resources</h1>
+            <div class="row">
+              <div class="col-md-6">
+                <p>Finding for you the best talent you deserve</p>
+              </div>
+              <div class="col-md-6 col-pad-5">
+                <ul id="liexp">
+                  <li>Talent Management</li>
+                  <li>Executive Coaching</li>
+                  <li>Compensation and benefits</li>
+                  <li>Merger and Acquisition</li>
+                  <li>Organization</li>
+                  <li>Restructuring</li>
+                  <li>Outplacement</li>
+                  <li>Career Counseling</li>
+                  <li>Administration</li>
+                  <li>Interim HR Management</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1>Contact</h1>
+      <div class="row">
+        <div class="col-md-6">
+
+          <form name="myemailform" role="form" action="form-to-email.php" method="post" >
+            <div class="form-group">
+              <label for="InputName">Your Name</label>
+              <div class="input-group">
+                <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter name" required>
+                <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+            </div>
+            <div class="form-group">
+              <label for="InputEmail">Your Email</label>
+              <div class="input-group">
+                <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter email" required>
+                <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+            </div>
+            <div class="form-group">
+              <label for="InputMessage">Message</label>
+              <div class="input-group">
+                <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+                <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+            </div>
+            <div class="form-group">
+              <label for="InputReal">What is 12+3? (Simple Spam Checker)</label>
+              <div class="input-group">
+                <input type="text" class="form-control" name="InputReal" id="InputReal" required>
+                <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+            </div>
+            <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
+          </form>
+        </div>
+           
+        <script language="JavaScript">
+          var frmvalidator  = new Validator("myemailform");
+          frmvalidator.addValidation("InputName","req","Please provide your name"); 
+          frmvalidator.addValidation("InputEmail","req","Please provide your email"); 
+          frmvalidator.addValidation("InputEmail","email","Please enter a valid email address"); 
+        </script>
+
+        <div class="col-md-6">
+          <address class="font-loc">
+            <h3>Office Location</h3>
+            <p><a href="https://www.google.be/maps/place/Avenue+Louise+367,+1000+Bruxelles/@50.8208253,4.3693997,17">Martin Franck<br>
+                Avenue Louise, 367
+                B-1050 Brussels</a><br>
+              Phone: +32 (0)2 642 00 23<br>
+              Mobile: +32 (0)494 565 756</p>
+          </address>
+        </div>
+      </div>
+    </div>
+
+    <div><br /></div>
+
+    <div id="footer">
+      <div class="container">
+        <p class="muted credit">&copy; Martin Franck 2015</p>
+      </div>
+    </div>
+    
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/gen_validatorv31.js">
+  </body>
+</html>
+
